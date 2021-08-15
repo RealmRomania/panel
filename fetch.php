@@ -18,7 +18,7 @@ while($row = mysqli_fetch_array($result))
   <li>
   <a href="#">
   <strong>'.$row["subject"].'</strong><br />
-  <small><em>'.$row["text"].'</em></small>
+  <small><em>'.$row["text"].' MERGE</em></small>
   </a>
   </li>
   ';
