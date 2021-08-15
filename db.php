@@ -3,6 +3,6 @@
 	$db_password = '';
 	$conn = new PDO( 'mysql:host=localhost;dbname=realm', $db_username, $db_password );
 	if(!$conn){
-		die("Fatal Error: Connection Failed!");
+		die("#302: mai bagă o fisă iubi");
 	}
 ?>
