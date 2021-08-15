@@ -51,7 +51,7 @@ foreach($users as $user)
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">Pages</a>
                                     </li>
-                                    <li class="breadcrumb-item active">Profile
+                                    <li class="breadcrumb-item active">Profil
                                     </li>
                                 </ol>
                             </div>
