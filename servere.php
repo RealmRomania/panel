@@ -61,7 +61,7 @@ foreach($server as $server)
                                         </div>
                                     </div>
                                     <h2 class="font-weight-bolder mt-1"><?php echo $row["ip"];?></h2>
-                                    <p class="card-text"><i class="fas fa-memory"></i> ‎‏‏‎ ‎‏‏‎<?php echo $row["RAM"]?> ‎‏‏‎GB RAM <br>
+                                    <p class="card-text"><i class="fas fa-memory"></i> ‎‏‏‎ ‎‏‏‎<?php echo $row["RAM"]?> ‎‏‏‎GB RAM / <?php echo $row["MAXRAM"] ?> GB Ram <br>
                                     <i class="fas fa-hdd"></i> ‎‏‏‎ ‎‏‏‎<?php echo $row["Spatiu"] ?> ‎‏‏‎ ‎‏‏‎SSD <br>
                                     <i class="fas fa-users"></i> ‎‏‏‎ ‎‏‏‎<?php echo $row["Players"] ?> ‎‏‏Online players</p>
                                 </div>
