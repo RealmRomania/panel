@@ -11,7 +11,9 @@ $stmt->execute();
 $users = $stmt->fetchAll(); 
 
 foreach($users as $user)  
+
 ?>
+
 <!DOCTYPE html>
 <html class="loading" lang="en" data-textdirection="ltr">
 <!-- BEGIN: Head-->
@@ -44,14 +46,14 @@ foreach($users as $user)
                 <div class="content-header-left col-md-9 col-12 mb-2">
                     <div class="row breadcrumbs-top">
                         <div class="col-12">
-                            <h2 class="content-header-title float-left mb-0">Profil</h2>
+                            <h2 class="content-header-title float-left mb-0">Profile</h2>
                             <div class="breadcrumb-wrapper">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.php">Acasă</a>
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a>
                                     </li>
                                     <li class="breadcrumb-item"><a href="#">Pages</a>
                                     </li>
-                                    <li class="breadcrumb-item active">Profil
+                                    <li class="breadcrumb-item active">Profile
                                     </li>
                                 </ol>
                             </div>
@@ -91,8 +93,17 @@ foreach($users as $user)
                                            </div>
                                         <!-- profile title -->
 
-                                        <div class="profile-title ml-3">
-                                            <h2 class="text-white"><?php echo $_SESSION["login-username"] ?> <?php if($user["Verified"] == 1): echo '<i data-feather="check-circle"></i>'; elseif($user["Verified"] == 0): echo ''; endif; ?> </h2>
+                                        <div class="profile-title ml-3"> 
+                                            <h2 class="text-white"><?php 
+                                            error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR);
+                                            $id=$_SESSION['login-username']; // Collecting one record with for user
+                                            $count=$conn->prepare("select * from users where id=:id");
+                                            $count->bindParam(":id",$id,PDO::PARAM_INT,1);
+                                            if($count->execute()){
+                                                $row = $count->fetch(PDO::FETCH_ASSOC);
+                                                print_r($row);
+                                                echo $row['username'];
+                                            } ?> <?php if($user["Verified"] == 1): echo '<i data-feather="check-circle"></i>'; elseif($user["Verified"] == 0): echo ''; endif; ?> </h2>
                                             <p class="text-white">Utilizator timpuriu</p>
                                         </div>
                                     </div>

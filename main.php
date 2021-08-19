@@ -65,7 +65,7 @@ include("imp/foreaches.php");
                                             <i data-feather="users" class="font-medium-5"></i>
                                         </div>
                                     </div>
-                                    <h2 class="font-weight-bolder mt-1">101</h2>
+                                    <h2 class="font-weight-bolder mt-1"><?php echo $server['Players']; ?></h2>
                                     <p class="card-text">Jucători online</p>
                                 </div>
                                 <div id="gained-chart"></div>
@@ -84,6 +84,22 @@ include("imp/foreaches.php");
                                     </div>
                                     <h2 class="font-weight-bolder mt-1">72</h2>
                                     <p class="card-text">Medie jucători</p>
+                                </div>
+                                <div id="order-chart"></div>
+                            </div>
+                        </div>
+                        <!-- Orders Chart Card ends -->
+                         <!-- Orders Chart Card starts -->
+                         <div class="col-lg-3 col-sm-6 col-12">
+                            <div class="card">
+                                <div class="card-header flex-column align-items-start pb-0">
+                                    <div class="avatar bg-light-warning p-50 m-0">
+                                        <div class="avatar-content">
+                                            <i data-feather="dollar-sign" class="font-medium-5"></i>
+                                        </div>
+                                    </div>
+                                    <h2 class="font-weight-bolder mt-1">99€</h2>
+                                    <p class="card-text">Bani din donații</p>
                                 </div>
                                 <div id="order-chart"></div>
                             </div>

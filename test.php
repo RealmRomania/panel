@@ -13,7 +13,7 @@
 	</nav>
 	<div class="col-md-3"></div>
 	<div class="col-md-6 well">
-		<h3 class="text-primary">ACESTA ESTE UN TEST</h3>
+		<h3 class="text-primary">PHP - PDO Login and Registration</h3>
 		<hr style="border-top:1px dotted #ccc;"/>
 		<div class="col-md-2"></div>
 		<div class="col-md-8">

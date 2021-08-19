@@ -68,7 +68,7 @@ Toate valorile noastre ne ajută să creăm un produs mai bun, să luăm decizii
                                 <div class="card-header flex-column align-items-start pb-0">
                                     <div class="avatar bg-light-primary p-50 m-0">
                                         <div class="avatar-content">
-                                            <i data-feather="test" class="font-medium-5"></i>
+                                            <i data-feather="console" class="font-medium-5"></i>
                                         </div>
                                     </div>
                                     <h2 class="font-weight-bolder mt-1">Developer</h2>
