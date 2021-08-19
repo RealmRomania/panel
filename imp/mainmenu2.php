@@ -32,6 +32,8 @@
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="./tichete.php"><i data-feather="mail"></i><span class="menu-title text-truncate" data-i18n="Email">Tichete</span><span class="badge badge-light-warning badge-pill ml-auto mr-1">2</span></a></a>
                 </li>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="./forum.php"><i data-feather="mail"></i><span class="menu-title text-truncate" data-i18n="Email">Forum</span><span class="badge badge-light-danger badge-pill ml-auto mr-1"><i class="fas fa-fire"></i>5 noi</span></a></a>
+                </li>
                 <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Util</span> </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/documentation"><i data-feather="folder"></i><span class="menu-title text-truncate" data-i18n="Documentation">Documentație</span></a>
                 </li>
