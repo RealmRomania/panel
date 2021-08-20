@@ -136,20 +136,19 @@ include("imp/foreaches.php");
                                 <h4 class="card-title">Ultimele acțiuni</h4>
                                 <i data-feather="more-vertical" class="font-medium-3 cursor-pointer"></i>
                             </div>
+                            
                             <div class="card-body">
                                 <div class="transaction-item">
                                     <div class="media">
-                                        <div class="avatar bg-light-primary rounded">
-                                            <div class="avatar-content">
-                                                <i data-feather="credit-card" class="avatar-icon font-medium-3"></i>
-                                            </div>
-                                        </div>
+                                     <?php include 'query/actions.php' ?>
+                                    </div>
                                         <div class="media-body">
-                                            <h6 class="transaction-title">Plată factura #71</h6>
-                                            <small>Realm România</small>
+                                            <h6 class="transaction-title"><?php echo  $actiune['actionName']; ?></h6>
+                                            <small><?php echo $actiune['actionRecipient']; ?></small>
+                                            
                                         </div>
                                     </div>
-                                    <div class="font-weight-bolder text-danger">- €15</div>
+                                    <div class="font-weight-bolder text-danger">€ <?php echo $actiune['amount'] ?></div>
                                 </div>
                                 <div class="transaction-item">
                                     <div class="media">
@@ -159,7 +158,7 @@ include("imp/foreaches.php");
                                             </div>
                                         </div>
                                         <div class="media-body">
-                                            <h6 class="transaction-title">Tichet închis</h6>
+                                            <h6 class="transaction-title"><?php echo $actiune['actionName']; ?></h6>
                                             <small>Nr. 851</small>
                                         </div>
                                     </div>
@@ -210,7 +209,7 @@ include("imp/foreaches.php");
                             </div>
 </div>
 </div>
-</div>
+</div>' ?>
                     <!--/ Transaction card -->
                     <!--/ tichete -->
 

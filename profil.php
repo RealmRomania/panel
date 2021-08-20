@@ -97,12 +97,12 @@ foreach($users as $user)
                                             <h2 class="text-white"><?php 
                                             error_reporting(E_ERROR | E_PARSE | E_CORE_ERROR);
                                             $id=$_SESSION['login-username']; // Collecting one record with for user
-                                            $count=$conn->prepare("select * from users where id=:id");
+                                            $count=$conn->prepare("SELECT * FROM users WHERE id=:id");
                                             $count->bindParam(":id",$id,PDO::PARAM_INT,1);
                                             if($count->execute()){
                                                 $row = $count->fetch(PDO::FETCH_ASSOC);
                                                 print_r($row);
-                                                echo $row['username'];
+                                                echo $row['id'];
                                             } ?> <?php if($user["Verified"] == 1): echo '<i data-feather="check-circle"></i>'; elseif($user["Verified"] == 0): echo ''; endif; ?> </h2>
                                             <p class="text-white">Utilizator timpuriu</p>
                                         </div>
